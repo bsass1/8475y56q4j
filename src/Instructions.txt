@@ -1,0 +1,215 @@
+Welcome to the Terrain coding challenge!
+
+Here's everything you need to know:
+
+
+=== Time Commitment ===
+
+You can choose how much time you would like to spend on this challenge.
+If you can only spend 45-60 minutes on this challenge, that's fine.
+If you can afford to spend 2+ hours on this challenge, that's also fine.
+Make a note at the end of how much time you decided to take on the challenge.
+
+Pick a time to work on it that is convenient for you.
+We'd ideally like you to complete this within a week of receiving it.
+However, if you need more time, just let us know. 
+We value this challenge highly, so you should be in a good frame of mind 
+  when you're working on it.
+
+
+=== Requirements ===
+
+For the position to which you're applying, 
+1. complete as many features (below)
+2. answer as many questions (below) 
+as you can (given your abilities and your available time)
+
+
+=== Using Codesandbox ===
+
+This is an editor that supports multiple file types.
+Using "Dependencies" on the left, you can add more NPM packages.
+You can create new files.
+Each time you Save (Cmd/Ctrl + S) a file, the screen on the right 
+will refresh and run your updated code.
+It will generate a new permanent URL the first time you make an edit and save.
+When you are finished, copy that URL and send it to us.
+You can come back to that URL to resume your work at any point.
+
+
+=== Context ===
+
+Your job is to build a simple interface that a coffee shop could use to create 
+and view drink recipes.
+
+A drink recipe combines actions and ingredients in an ordered list.
+Some example recipes are in Data.js
+
+We've added a list of possible actions and another of possible supplies in Data.js
+
+Good luck and have fun!
+
+
+=== Features ===
+
+Mark with an "x" when you have completed a feature.
+
+
+[X] (Front-End, Easy, requires React knowledge)
+    In the Drink Builder, implement a Delete "x" button 
+    next to each already-added step in the
+    current recipe which removes that step.
+
+[X] (Front-End, Medium, requires React knowledge)
+    In the Drink Builder, enforce a mechanic so that 
+    Supplies can only be added if the
+    most recent Action before them is "Add." For example, 
+    if the current recipe was ["Add", "Drip Coffee"], 
+    Supplies (and Actions) would be enabled. But if the 
+    current recipe was ["Add", "Cream", "Stir"], 
+    the Supplies would be disabled until the user
+    adds an Add action.
+    You should give the Supplies buttons a 
+    disabled style when they are invalid.
+    Please keep in mind React patterns and design 
+    principles when building this.
+
+[ ] (Front-End, Hard, requires React knowledge)
+    In the Drinks Viewer, When a drink is selected, 
+    add a button to the bottom of the Current
+    Drink section which says "Edit Drink." 
+    When clicked, it opens the Drink Builder with that
+    drink recipe loaded, and allows the user to 
+    edit the recipe.
+
+[ ] (Front-End, Medium)
+    In the Drinks Builder, if a user builds out a drink which has an identical recipe to a drink
+    that already exists, disable the user from saving the drink, and show them a message
+    indicating that the drink already exists and the name of the existing drink.
+    Note: You can / should utilize your solution to the Algorithms, Easy feature below for this,
+    and if you completed the extension (Algorithms, Hard feature) then use that as well.
+
+
+[X] (Algorithms, Easy)
+    For Front-End, Full-Stack, and Systems candidates:
+    In Algorithms.js:
+    Implement a drink search function. Given a recipe 
+    (an array of actions and supplies) and
+    an array of existing drinks, return any 
+    existing drinks whose recipe matches exactly
+    the given recipe. You can test out your code 
+    in the "Search For Drink" area of the app.
+
+[X] (Algorithms, Medium)
+    For Senior-Front-End, Full-Stack, Systems candidates:
+    In Algorithms.js:
+    Implement a "what can I make?" function. Given some 
+    ingredients and an array of recipes, search for a 
+    recipe that can be made using the given ingredients.
+    For example, if your ingredients were:
+    ['Espresso Shot', 'Espresso Shot', 'Cream', 'Cream',
+    'Whipped Cream', 'Ice']
+    the only drink from the DEFAULT_DRINKS array that 
+    would match would be "Café Con Crema." 
+    You can test out your code in the 
+    "What Can I Make?" section of the app.
+
+[ ] (Algorithms, Hard) 
+    For Full-Stack and Systems candidates:
+    In Algorithms.js:
+    Extend your drink search (Algorithms, Easy question) 
+    in this way:
+    In a recipe, consider any two groupings of SUPPLIES 
+    (uninterrupted by ACTIONS)
+     to be equivalent regardless of the order of the 
+     supplies.
+    In other words, when you add a bunch of supplies 
+    all in a row without performing any
+     actions in-between, those recipes should be 
+     considered equal, regardless of the order
+     of the supplies.
+    For example: 
+    ['Add', 'Cream', 'Sugar', 'Drip Coffee'] 
+    would be considered equal to:
+    ['Add', 'Drip Coffee', 'Sugar', 'Cream']
+    but not equal to: 
+    ['Add', 'Sugar', 'Cream', 'Steam', 'Add', 'Drip Coffee']
+  
+
+
+
+=== Questions ===
+
+[X] (For everyone)
+    How would you improve your code and/or UI/UX?
+    How much time did you take on this challenge?
+    ** I would add more lifecycle methods, create more functional components, I would
+    add more color for interest and use some animation elements.
+
+    ** I spent probably about 6 to 7 hours on this. I was using the web editor and didn't save my work and lost
+    most of it. That was painful. I ended up dowloading the repo and working on the code locally which worked a
+    lot better for me
+
+
+[X] (Front-End, Easy) Requires React knowledge:
+    Why do we bind some of the class methods in the 
+    constructors of React components?
+    e.g., this.renderDrinks = this.renderDrinks.bind(this);
+    Also, why do we bind these functions in the
+    constructor, and not in render?
+    e.g., onClick = { this.handleDrinkClick.bind(this, id) }
+
+    ** We use the bind method to change the context of component methods to the class object.
+    ** We bind in the constructor because the bind is reallocated with every render and that
+    can add to memory resources.
+
+
+
+[X] (Front-End, Easy)
+    We currently render raw HTML for showing the steps 
+    in both the DrinksViewer and
+    the DrinkBuilder. What is a way we could refactor 
+    this code to make it reusable?
+    ** We can make the HTML into a functional component and pass in props
+    which is the recommended approach for React.
+
+
+
+[X] (Front-End, Medium)
+    There is a React-specific bug in the Drink Builder. 
+    You can trigger it by adding
+    multiple of the same step to a recipe. 
+    What is the bug? How can you fix it?
+    ** The bug is a prop key error. React doesn't like duplicate keys. We have to use a unique key
+    instead of the item name.
+
+[X] (Front-End, Hard) For senior Front-End candidates:
+    Imagine this app grows to become much more 
+    complicated, and the views of both
+    individual drinks and steps become very 
+    detailed and complex.
+    What are some changes we could make to this 
+    code to improve performance, so
+    that the interface can consistently run at 
+    60 fps and avoid jank?
+    ** We can use factor some code to execute in the lifecycle methods. In particular componentShouldUpdate where
+    we can check for components that may not need to be rendered with every state change.
+
+
+[ ] (Algorithms, Easy) 
+    For Front-End, Full-Stack, and Systems candidates:
+    What is the big-O run-time of your basic drink 
+    search? (Algorithms, Easy)
+    Were there steps you took, or are there any 
+    further steps you could take,
+    to improve the runtime?
+    ** I would say O(n x n) because we have to search drink recipes against supplies.
+
+[ ] (Algorithms, Hard) 
+    For Full-Stack and Systems candidates:
+    What is the big-O runtime of your 
+    What Can I Make function?
+
+
+
+
