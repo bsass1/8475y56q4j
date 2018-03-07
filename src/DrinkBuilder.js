@@ -42,6 +42,7 @@ export default class DrinkBuilder extends React.Component {
         })}
         key='veil'
       />,
+
       <div
         key='drink-builder'
         className='page flex-stack'
@@ -83,7 +84,7 @@ export default class DrinkBuilder extends React.Component {
                 </label>
               </div>,
               <div
-                className={(disableSaveButton)? 'big-button-noclick' : 'big-button' }
+                className={this.disableSave( this.props.drinks, steps) ? 'big-button-noclick' : 'big-button' }
                 onClick={this.handleSave}
               >
                 Save
@@ -155,7 +156,6 @@ export default class DrinkBuilder extends React.Component {
                 )
               }
 
-                {this.disableSave.bind(this, this.props.drinks, steps)}
               {
                 steps.length === 0 ?
                   <div className='needed'>
@@ -305,10 +305,7 @@ export default class DrinkBuilder extends React.Component {
   disableSave(drinks, steps) {
       const duplicate  = searchDrinks(drinks, steps);
       if(duplicate.length != 0 ){
-
-          this.setState({
-              disableSaveButton: true
-          });
+          return true
       }
       return false
   }
