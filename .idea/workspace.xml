@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cde928d-615f-416e-9ce9-a56ba3e8dbd2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DrinkBuilder.js" afterPath="$PROJECT_DIR$/src/DrinkBuilder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Instructions.txt" afterPath="$PROJECT_DIR$/src/Instructions.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Styles.css" afterPath="$PROJECT_DIR$/src/Styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Instructions.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Instructions.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Instructions.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+            <state relative-caret-position="161">
+              <caret line="84" column="1" lean-forward="false" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -32,7 +31,7 @@
       <file leaf-file-name="Algorithms.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Algorithms.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
+            <state relative-caret-position="779">
               <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="28" />
               <folding />
             </state>
@@ -42,7 +41,7 @@
       <file leaf-file-name="Data.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-400">
+            <state relative-caret-position="-502">
               <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="8" />
               <folding />
             </state>
@@ -52,11 +51,41 @@
       <file leaf-file-name="DrinkBuilder.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DrinkBuilder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
+            <state relative-caret-position="2055">
               <caret line="137" column="58" lean-forward="false" selection-start-line="137" selection-start-column="52" selection-end-line="137" selection-end-column="58" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="1863" column="0" lean-forward="true" selection-start-line="1863" selection-start-column="0" selection-end-line="1863" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/src/Styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
-              <caret line="357" column="13" lean-forward="true" selection-start-line="357" selection-start-column="13" selection-end-line="357" selection-end-column="13" />
+              <caret line="357" column="13" lean-forward="false" selection-start-line="357" selection-start-column="13" selection-end-line="357" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -120,7 +149,6 @@
       <find>localStorageDrinks</find>
       <find>whatCanIMake</find>
       <find>what</find>
-      <find>searchDrinks</find>
       <find>isAction</find>
       <find>isSupply</find>
       <find>big-button</find>
@@ -132,6 +160,7 @@
       <find>set</find>
       <find>Recipe</find>
       <find>deleteSteps</find>
+      <find>searchDrinks</find>
       <find>renderItem</find>
     </findStrings>
   </component>
@@ -149,6 +178,9 @@
         <option value="$PROJECT_DIR$/src/DrinkBuilder.js" />
         <option value="$PROJECT_DIR$/src/Styles.css" />
         <option value="$PROJECT_DIR$/src/Instructions.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -164,8 +196,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-54" />
-    <option name="y" value="35" />
+    <option name="x" value="24" />
+    <option name="y" value="32" />
     <option name="width" value="1431" />
     <option name="height" value="723" />
   </component>
@@ -243,20 +275,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="8475y56q4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8475y56q4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8475y56q4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -381,19 +399,19 @@
       <option name="presentableId" value="Default" />
       <updated>1520305246970</updated>
       <workItem from="1520305251928" duration="28158000" />
-      <workItem from="1520439698124" duration="16185000" />
+      <workItem from="1520439698124" duration="17792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44343000" />
+    <option name="totallyTimeSpent" value="45950000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-54" y="35" width="1431" height="723" extended-state="0" />
+    <frame x="24" y="32" width="1431" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3212766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="ReactNative" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -545,22 +563,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.js" />
-    <entry file="file://$PROJECT_DIR$/src/Algorithms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-400">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -582,9 +584,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="357" column="13" lean-forward="false" selection-start-line="357" selection-start-column="13" selection-end-line="357" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Instructions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="84" column="1" lean-forward="false" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-502">
+          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DrinkBuilder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
+        <state relative-caret-position="2055">
           <caret line="137" column="58" lean-forward="false" selection-start-line="137" selection-start-column="52" selection-end-line="137" selection-end-column="58" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
@@ -592,18 +626,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Styles.css">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="357" column="13" lean-forward="true" selection-start-line="357" selection-start-column="13" selection-end-line="357" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Instructions.txt">
+    <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+        <state relative-caret-position="370">
+          <caret line="1863" column="0" lean-forward="true" selection-start-line="1863" selection-start-column="0" selection-end-line="1863" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
