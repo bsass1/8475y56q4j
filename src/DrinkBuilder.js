@@ -13,7 +13,6 @@ export default class DrinkBuilder extends React.Component {
       drinkName: '',
       drinkNameIsFocused: false,
       supplyRuleEnforced: null,
-      disableSaveButton: false,
     };
 
     this.handleItemClick = this.handleItemClick.bind(this);
@@ -25,7 +24,6 @@ export default class DrinkBuilder extends React.Component {
     this.handleFocus = this.handleFocus.bind(this);
     this.renderWhatCanIMake = this.renderWhatCanIMake.bind(this);
     this.renderSearchDrinks = this.renderSearchDrinks.bind(this);
-
   }
 
   render() {
@@ -33,6 +31,7 @@ export default class DrinkBuilder extends React.Component {
       this.props;
     const isOpen = isCreatingDrink || isSearchingForDrink || isInWhatCanIMake;
     const { steps, drinkName, drinkNameIsFocused,disableSaveButton } = this.state;
+    const disSave = this.disableSave( this.props.drinks, steps);
 
     return ([
       <div
@@ -84,22 +83,27 @@ export default class DrinkBuilder extends React.Component {
                 </label>
               </div>,
               <div
-                className={this.disableSave( this.props.drinks, steps) ? 'big-button-noclick' : 'big-button' }
+                className={ disSave ? 'big-button-noclick' : 'big-button' }
                 onClick={this.handleSave}
               >
                 Save
               </div>
             ]
           }
+
         </div>
 
         <div className='columns flex-grow'>
           <div className='column'>
+
             <div className='column-name'>
               {
                 isInWhatCanIMake ? 'Supplies' : 'Supplies & Actions'
               }
             </div>
+
+
+
             <div className='column-content'>
               {
                 (isCreatingDrink || isSearchingForDrink) &&
@@ -123,12 +127,17 @@ export default class DrinkBuilder extends React.Component {
           </div>
           <div className='column'>
             <div className='column-name'>
+
               {
                 isCreatingDrink ? 'Recipe' :
                   (isSearchingForDrink ? 'Recipe & Matches' : 'Your Supplies & Matches')
               }
             </div>
+
             <div className='column-content steps'>
+              <span className={ disSave ? 'mess' : 'nomess' }   >
+                Drink already exists
+              </span>
               {
                 (isSearchingForDrink || isInWhatCanIMake) &&
                 <div className='section-header'>
@@ -303,9 +312,10 @@ export default class DrinkBuilder extends React.Component {
   }
 
   disableSave(drinks, steps) {
-      const duplicate  = searchDrinks(drinks, steps);
+      let duplicate  = searchDrinks(drinks, steps);
+
       if(duplicate.length != 0 ){
-          return true
+        return true
       }
       return false
   }

@@ -352,3 +352,12 @@ body,
   background-color: lightgray ;
   color: #1eb4fa;
 }
+
+.mess {
+  right: 400px;
+  color: red;
+
+}
+.nomess {
+  display: none;
+}

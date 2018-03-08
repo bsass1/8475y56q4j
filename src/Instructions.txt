@@ -82,7 +82,7 @@ Mark with an "x" when you have completed a feature.
     drink recipe loaded, and allows the user to 
     edit the recipe.
 
-[ ] (Front-End, Medium)
+[X] (Front-End, Medium)
     In the Drinks Builder, if a user builds out a drink which has an identical recipe to a drink
     that already exists, disable the user from saving the drink, and show them a message
     indicating that the drink already exists and the name of the existing drink.
